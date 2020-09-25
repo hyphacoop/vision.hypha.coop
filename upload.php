@@ -8,7 +8,7 @@ if(isset($_POST["submit"])) {
     if($check !== false) {
 	$fileparts=explode(".",$_FILES["uploadFile"]["name"]);
         $fileName= date("Ymd-His") . "." .  $fileparts[count($fileparts)-1];
-	move_uploaded_file($_FILES["uploadFile"]["tmp_name"],"/home/hyphacoop/www/files/" . $fileName);
+	move_uploaded_file($_FILES["uploadFile"]["tmp_name"],$target_dir . $fileName);
     } else {
         echo "File is not an image.!!";
         $uploadOk = 0;

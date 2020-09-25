@@ -46,7 +46,7 @@ foreach ($files as $entry) {
 function drawItem($item) {
 	?>
 	<div class="item"><img src="files/<?=$item?>" /></div>
-	<?
+	<?php
 }
 ?>
 </body>
